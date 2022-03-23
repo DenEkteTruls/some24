@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,600;1,700&family=Rubik:wght@600&display=swap');
+
+:root
+{
+	--dark-background-color: hsl(210, 4%, 10%);
+	--light-background-color: hsl(0, 0%, 94%);
+	--dark-article-background-color: hsl(210, 3%, 15%);
+	--dark-article-hover-color: #2F3032;
+	--seperator-line: #E0E0E0;
+    --subtext: hsl(0, 0%, 70%);
+    --green:hsl(160, 100%, 38%);
+	--purple: hsl(272, 91%, 47%);
+    --default-font: 'Roboto';
+    --gradient-background: linear-gradient(45deg, var(--blue), var(--green));
+    --gradient-background-90: linear-gradient(90deg, var(--normalblue), var(--green));
+}
+
+* {
+	font-family: var(--default-font);
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: var(--default-font);
+	background-color: var(--dark-background-color);
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	max-width: 1000px;
+}
+
