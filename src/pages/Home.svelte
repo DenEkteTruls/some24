@@ -1,8 +1,5 @@
 <script>
-	import ArticleList from "../components/ArticleList.svelte";	
-	function toggle() {
-		//window.document.body.classList.toggle("light-mode");
-	}
+	import ArticleList from "../components/ArticleList.svelte";
 </script>
 
 <body>
@@ -10,8 +7,4 @@
 </body>
 
 <style>
-	:global(body.light-mode) {
-		background-color: var(--light-background-color);
-		color: black;
-	}
 </style>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,600;1,700&family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Rubik:wght@400;500;600;900&display=swap');
 
 :root
 {
@@ -14,7 +15,7 @@
 	--purple: hsl(272, 91%, 47%);
 	--blue: #3F34DF;
 	--orange: #ED8400;
-    --default-font: 'Roboto';
+    --default-font: "IBM Plex Mono", monospace;
     --gradient-background: linear-gradient(45deg, var(--blue), var(--green));
     --gradient-background-90: linear-gradient(90deg, var(--normalblue), var(--green));
 }
