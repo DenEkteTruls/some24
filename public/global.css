@@ -12,6 +12,8 @@
     --subtext: hsl(0, 0%, 70%);
     --green:hsl(160, 100%, 38%);
 	--purple: hsl(272, 91%, 47%);
+	--blue: #3F34DF;
+	--orange: #ED8400;
     --default-font: 'Roboto';
     --gradient-background: linear-gradient(45deg, var(--blue), var(--green));
     --gradient-background-90: linear-gradient(90deg, var(--normalblue), var(--green));
@@ -30,5 +32,5 @@ body {
 	box-sizing: border-box;
 	overflow-x: hidden;
 	max-width: 1000px;
+	min-width: 650px;
 }
-

@@ -19,9 +19,13 @@
     </div>
     <div class="info-container">
         {#if article.emne == "sikkerhet"}
-            <Emne text="Sikkerhet" color="--green"/>
-        {:else if article.emne == "ferie"}
-            <Emne text="Ferie" color="--purple"/>
+            <Emne text={article.emne} color="--green"/>
+        {:else if article.emne == "nyheter"}
+            <Emne text={article.emne} color="--purple"/>
+        {:else if article.emne == "presentasjon"}
+            <Emne text={article.emne} color="--blue"/>
+        {:else if article.emne == "Viste du?"}
+            <Emne text={article.emne} color="--orange"/>
         {/if}
         <h1 id="title">{article.title}</h1>
         <p id="undertitle">Dette er en undertittel til artikkelen, advarers.</p>
@@ -51,6 +55,7 @@
 
     .image-container > img {
         width: 220px;
+        height: 80%;
         object-fit: cover;
         border-radius: 15px;
     }
@@ -81,4 +86,10 @@
         background-color: var(--dark-article-hover-color);
     }
 
+    @media (max-width: 850px) {
+        p {
+            visibility: hidden;
+            height: 0;
+        }
+    }
 </style>

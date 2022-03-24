@@ -1,25 +1,42 @@
 <script>
     let articles = [
-        {id: 0, title: "Biden - Styrk cyberforsvaret i Ukraina.", emne: "sikkerhet", subtext: "Dette er en undertittel til artikkelen, advarers.", alt: "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja", image_src: "https://www.kode24.no/images/75665214.jpg?imageId=75665214&x=0&y=0&cropw=100&croph=100&width=940&height=626", content: "Biden - Styrk cyberforsvaret i Ukraina.<br><h2>I løpet av et tiår har sosiale medier forandret måten vi kommuniserer med hverandre på.</h2><br>Vi går i retning av et mer teknologibasert samfunn, og Norge blir ofte omtalt som ett av de mest digitale samfunnene i verden. Ungdom bruker opp mot sju timer i gjennomsnitt på nettet daglig. Ungdom bruker mindre tid sammen med venner ansikt til ansikt, og mer tid på Internett og sosiale medier. Varig lagring: Kommunikasjonen i s"},
-        {id: 1, title: "Ove (32) liker seg i hengekøya: - Blir ofte lange lunsjer", subtext: "Dette er en undertittel til artikkelen, advarers.", alt: "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja", emne: "ferie", image_src: "https://www.kode24.no/images/75644945.jpg?imageId=75644945&panox=0&panoy=36.363636363636&panow=100&panoh=63.636363636364&heighty=0&heightx=44.53781512605&heightw=33.893557422969&heighth=100&width=245&height=205&compression=80", content: "Heisann jeg er også en artikkel med tekst"},
+        {id: 0, title: "Biden - Styrk cyberforsvaret i Ukraina.", emne: "sikkerhet", subtext: "Dette er en undertittel til artikkelen, advarers.", alt: "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja", image_src: "https://www.kode24.no/images/75665214.jpg?imageId=75665214&x=0&y=0&cropw=100&croph=100&width=940&height=626", content: "<b>Biden - Styrk cyberforsvaret i Ukraina.</b><br><br>I løpet av et tiår har sosiale medier forandret måten vi kommuniserer med hverandre på. Vi går i retning av et mer teknologibasert samfunn, og Norge blir ofte omtalt som ett av de mest digitale samfunnene i verden. Ungdom bruker opp mot sju timer i gjennomsnitt på nettet daglig. Ungdom bruker mindre tid sammen med venner ansikt til ansikt, og mer tid på Internett og sosiale medier. Varig lagring: Kommunikasjonen i s"},
+        {id: 1, title: "Fake News eller Real News :- Hvordan skiller vi dem?", emne: "nyheter", subtext: "Dette er en undertittel til artikkelen, advarers.", alt: "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja", image_src: "https://international.usc.edu/wp-content/uploads/fake.jpg", content: "Heisann jeg er også en artikkel med tekst"},
+        {id: 2, title: "Snapchat", emne: "presentasjon", subtext: "Dette er en undertittel til artikkelen, advarers.", alt: "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja", image_src: "https://www.howtogeek.com/wp-content/uploads/2021/08/snaptchat-logo-welcome-iphone.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1", content: "Heisann jeg er også en artikkel med tekst"},
+        {id: 3, title: "Viste du :- Du eier egentlig ikke bildene dine på nett!", emne: "Viste du?", image_src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT408l0LpFepyCzl1XdKeahlWsIISoC8092ew&usqp=CAU", subtext: "Dette er en undertittel til artikkelen, advarers.", alt: "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja", content: "Du er dum ass..."}
     ];
 
     let article = articles[localStorage.getItem("article_id")];
 
-    function clicked() { window.location.assign("/"); }
+    function stringToHTML(str)
+    {
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(str, "text/html");
 
+        var bold_tags = doc.getElementsByTagName("b");
+        for(var i = 0; i < bold_tags.length; i++)
+        {
+            doc.getElementsByTagName("b")[i].style = "\
+            color: white; \
+            font-size: 30px; \
+            letter-spacing: 2px; \
+            ";
+        }
+        return doc.body.innerHTML;
+    }
+
+    function load_bottom()
+    {
+        console.log("in");
+        document.getElementById("article").innerHTML = stringToHTML(article.content);
+    }
+
+    window.onload = () => {
+        load_bottom();
+    }
 </script>
 
 
-
-<div class="menu">
-    <div class="logo-container" on:click={clicked}>
-        <img src="logo.PNG" alt=""/>
-        <h1>Some24</h1>
-    </div>
-    <div class="mid-part"></div>
-    <div class="right-controls"></div>
-</div>
 <div class="container">
     <div class="top">
         <h1 id="title">{article.title}</h1>
@@ -31,9 +48,7 @@
             </div>
         </div>
     </div>
-    <div class="bottom">
-        {article.content}
-    </div>
+    <div class="bottom" id="article"></div>
 </div>
 
 
@@ -53,6 +68,7 @@
     .top {
         display: flex;
         flex-direction: column;
+        max-width: 950px;
     }
 
     #title {
@@ -95,48 +111,48 @@
     }
 
     .bottom {
-        max-width: 700px;
+        max-width: 750px;
         font-size: 20px;
+        color: var(--subtext);
+        margin: 50px 0;
     }
 
-
-
-    .menu {
-		margin: 30px 0;
-		user-select: none;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		max-width: 1000px;
+    :global(body.light-mode)
+    {
+		color: black;
 	}
 
-	.logo-container {
-		width: 20%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: 0 40px;
-	}
+    :global(body.light-mode) .subimgdiv {
+        background-color: var(--article-hover-color);
+    }
 
-	.logo-container > img {
-		height: 80px;
-	}
+    @media (max-width: 1000px){
+        .top {
+            max-width: 800px;
+        }
 
-	.logo-container > h1 {
-		color: lightgray;
-		margin-left: 10px;
-		font-weight: 400;
-	}
+        .bottom {
+            max-width: 650px;
+        }
+    }
 
-	.logo-container:hover {
-		cursor: pointer;
-	}
+    @media (max-width: 850px) {
+        .top {
+            max-width: 700px;
+        }
 
-	.mid-part {
-		width: 60%;
-	}
+        .bottom {
+            max-width: 600px;
+        }
+    }
 
-	.right-controls {
-		width: 20%;
-	}
+    @media (max-width: 770px) {
+        .top {
+            max-width: 600px;
+        }
+
+        .bottom {
+            max-width: 550px;
+        }
+    }
 </style>
