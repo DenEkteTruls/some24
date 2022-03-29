@@ -2,7 +2,6 @@
     export let article;
     import Emne from "./Emne.svelte";
 
-
     function clicked()
     {
         localStorage.setItem("article_id", article.id);
