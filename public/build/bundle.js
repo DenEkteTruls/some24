@@ -1963,7 +1963,7 @@ var app = (function () {
     	let t2;
     	let t3;
     	let p;
-    	let t4_value = /*article*/ ctx[0].alt + "";
+    	let t4_value = /*article*/ ctx[0].subtext + "";
     	let t4;
     	let current;
     	let mounted;
@@ -2083,7 +2083,7 @@ var app = (function () {
     			}
 
     			if ((!current || dirty & /*article*/ 1) && t2_value !== (t2_value = /*article*/ ctx[0].title + "")) set_data_dev(t2, t2_value);
-    			if ((!current || dirty & /*article*/ 1) && t4_value !== (t4_value = /*article*/ ctx[0].alt + "")) set_data_dev(t4, t4_value);
+    			if ((!current || dirty & /*article*/ 1) && t4_value !== (t4_value = /*article*/ ctx[0].subtext + "")) set_data_dev(t4, t4_value);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -3375,8 +3375,8 @@ var app = (function () {
     			"title": "Ekkokammer :- Grobunn for konspirasjonsteorier og bygging av demokratiet",
     			"size": "big",
     			"emne": "konspirasjon",
-    			"subtext": "her skal det skrives en undertittel (catchphrase) til artikkelen.",
-    			"alt": "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja",
+    			"subtext": "Ekkokammer på sosiale medier fører til radikalisering av polarisering. Dagens store samfunnsproblem.",
+    			"alt": "Forfatter: Casper Nag, Horten Videregående Skole, 31.03.2022",
     			"image_src": "https://zetland.imgix.net/def2beb0-eec4-11e6-9f6a-e7534d0165bf/boble.gif?fit=crop&crop=entropy&auto=format,compress&cs=srgb&gifq=45&w=1200&h=630",
     			"content": "Et økende samfunnsproblem er radikalisering på grunn av et stadig mer polarisert folk. En faktor til polariseringen kan være enkel tilgang til falske nyheter i forskjellig grad, fordi mange lesere søker nyheter man fundamentalt er enig i. Dette kan skape grobunner for konspirasjonsteorier da man mister motstående aspekter. Men kan det også være en mulighet for ekte meningsutveksling og bytting av demokratiet?<br><br>Sosiale medier har fått mye av skylda for polariseringen av folket, gjennom oppblomstringen av konspirasjonsteorier på sosiale medier. Og dette er kanskje ikke så rart når vi ser på hvordan et sosialt medium er bygget opp. <a on:click={localStorage.setItem(«article_id», 2); window.location.assign(«/article»);}>(Hvordan Snapchat er bygget fungerer)</a><br><br>Nyheter og meninger som vil komme på sosiale medier som for eksempel Snapchat, er basert på engasjementstatistikk. Mediumet har en rekke algoritmer for å lage en modell av deg, og hva du liker å se av bilder, videoer og meninger. Modellen er basert på sannsynlighet og endrer seg hele tiden mens du scroller deg gjennom mediumet, kanskje helt uviten om at adferden din du overvåkes. Du får kun innlegg som passer predikasjoner av dine meninger, og du mister andre aspekter på saker. Dette er grobunnen i konspirasjonsteorier.<h2>Hvem får skylda?</h2>Kan egentlig den radikaliserte leseren få skylda? Når du systematisert blir tilsendt mer og mer radikale konspirasjonsteorier, etter løpende radikalisering i ekkokammeret kaldt sosiale medier. Man må huske at sosiale mediers formål er ikke å formidle oppriktige nyheter, men å formidle bilder, tanker og hendelser. Men å tjene penger på brukerne, noe som i seg selv er helt redelig siden brukerne godkjenner vilkårene. Brukerne av sosiale medier kan heller ikke få skylda da man må ha en veldig god kritisk tankegang for å motstå konspirasjonsteorier, og skille ekte nyheter fra falske nyheter. Hvem som har skylda er vanskelig å bestemme, og konspirasjonsproblemet forblir uløst.<h2>Kan dette også være en mulighet for ekte meningsutveksling og bygging av demokratiet?</h2>Min personlige mening er at polarisering som en konsekvens av falske nyheter over sosiale medier, ikke vil være til ekte meningsutveksling og bygging av demokratiet. Jeg tror rett og slett du ikke kan ha en ekte meningsutveksling når begge parter baserer meningen sin på en modifisert sannhet tilpasset dem. Det er også viktig å påpeke at de aller fleste holder seg i midten av meningsspekteret, men det er ofte kantene det er opprør mellom. Når det kommer til bygging av demokratiet, er jeg litt mer usikker. Vi ser at meningsmålinger blant ungdommer viser en form for samling rundt partiene Rødt og FRP, som er plassert på hver sin kant i det politiske spekteret. Dette viser polariseringen blant unge, og kan føre til større diskusjoner de neste årene der ytringsfriheten vil spille en sentral rolle. Jeg kan se for meg at engasjement blant unge voksne i tiden fremover vil vokse på grunn av dette, og at demokratiet vil bygges på den måten."
     		},

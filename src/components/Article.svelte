@@ -46,7 +46,7 @@
                     <Emne text={article.emne} color="--orange"/>
                 {/if}
                 <h1 id="title">{article.title}</h1>
-                <p id="undertitle">{article.alt}</p>
+                <p id="undertitle">{article.subtext}</p>
             </div>
         </div>
     </div>
