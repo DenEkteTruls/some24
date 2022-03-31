@@ -18,8 +18,13 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "firebase": "^9.6.10",
     "page": "^1.11.6",
     "sirv-cli": "^2.0.0",
+    "store": "^2.0.12",
+    "store-js": "^2.0.4",
+    "store.js": "^1.0.4",
+    "stores": "^1.0.0",
     "svelte-routing": "^1.6.0"
   }
 }

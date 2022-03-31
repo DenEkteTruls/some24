@@ -2,7 +2,6 @@
     export let article;
     import Emne from "./Emne.svelte";
 
-
     function clicked()
     {
         localStorage.setItem("article_id", article.id);
@@ -18,7 +17,7 @@
             <img src={article.image_src} alt=""/>
         </div>
         <div class="info-container">
-            {#if article.emne == "sikkerhet"}
+            {#if article.emne == "konspirasjon"}
                 <Emne text={article.emne} color="--green"/>
             {:else if article.emne == "nyheter"}
                 <Emne text={article.emne} color="--purple"/>
@@ -37,7 +36,7 @@
         <img src="{article.image_src}" alt=""/>
         <div class="subimgdiv">
             <div class="info-container">
-                {#if article.emne == "sikkerhet"}
+                {#if article.emne == "konspirasjon"}
                     <Emne text={article.emne} color="--green"/>
                 {:else if article.emne == "nyheter"}
                     <Emne text={article.emne} color="--purple"/>
