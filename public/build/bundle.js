@@ -1974,7 +1974,7 @@ var app = (function () {
     	const if_blocks = [];
 
     	function select_block_type_2(ctx, dirty) {
-    		if (/*article*/ ctx[0].emne == "sikkerhet") return 0;
+    		if (/*article*/ ctx[0].emne == "konspirasjon") return 0;
     		if (/*article*/ ctx[0].emne == "nyheter") return 1;
     		if (/*article*/ ctx[0].emne == "presentasjon") return 2;
     		if (/*article*/ ctx[0].emne == "Viste du?") return 3;
@@ -2003,21 +2003,21 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*article*/ ctx[0].image_src)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
     			attr_dev(img, "class", "svelte-s4fk3c");
-    			add_location(img, file$3, 35, 8, 1215);
+    			add_location(img, file$3, 35, 8, 1218);
     			attr_dev(h1, "id", "title");
     			attr_dev(h1, "class", "svelte-s4fk3c");
-    			add_location(h1, file$3, 47, 16, 1851);
+    			add_location(h1, file$3, 47, 16, 1857);
     			attr_dev(p, "id", "undertitle");
     			attr_dev(p, "class", "svelte-s4fk3c");
-    			add_location(p, file$3, 48, 16, 1904);
+    			add_location(p, file$3, 48, 16, 1910);
     			attr_dev(div0, "class", "info-container svelte-s4fk3c");
-    			add_location(div0, file$3, 37, 12, 1301);
+    			add_location(div0, file$3, 37, 12, 1304);
     			attr_dev(div1, "class", "subimgdiv svelte-s4fk3c");
-    			add_location(div1, file$3, 36, 8, 1264);
+    			add_location(div1, file$3, 36, 8, 1267);
     			attr_dev(div2, "class", "image-container-big svelte-s4fk3c");
-    			add_location(div2, file$3, 34, 4, 1172);
+    			add_location(div2, file$3, 34, 4, 1175);
     			attr_dev(div3, "class", "container-big svelte-s4fk3c");
-    			add_location(div3, file$3, 33, 0, 1120);
+    			add_location(div3, file$3, 33, 0, 1123);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div3, anchor);
@@ -2142,7 +2142,7 @@ var app = (function () {
     	const if_blocks = [];
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*article*/ ctx[0].emne == "sikkerhet") return 0;
+    		if (/*article*/ ctx[0].emne == "konspirasjon") return 0;
     		if (/*article*/ ctx[0].emne == "nyheter") return 1;
     		if (/*article*/ ctx[0].emne == "presentasjon") return 2;
     		if (/*article*/ ctx[0].emne == "Viste du?") return 3;
@@ -2175,10 +2175,10 @@ var app = (function () {
     			add_location(div0, file$3, 15, 8, 319);
     			attr_dev(h1, "id", "title");
     			attr_dev(h1, "class", "svelte-s4fk3c");
-    			add_location(h1, file$3, 28, 12, 935);
+    			add_location(h1, file$3, 28, 12, 938);
     			attr_dev(p, "id", "undertitle");
     			attr_dev(p, "class", "svelte-s4fk3c");
-    			add_location(p, file$3, 29, 12, 984);
+    			add_location(p, file$3, 29, 12, 987);
     			attr_dev(div1, "class", "info-container svelte-s4fk3c");
     			add_location(div1, file$3, 18, 8, 425);
     			attr_dev(div2, "class", "container svelte-s4fk3c");
@@ -2434,7 +2434,7 @@ var app = (function () {
     	return block;
     }
 
-    // (39:16) {#if article.emne == "sikkerhet"}
+    // (39:16) {#if article.emne == "konspirasjon"}
     function create_if_block_6(ctx) {
     	let emne;
     	let current;
@@ -2478,7 +2478,7 @@ var app = (function () {
     		block,
     		id: create_if_block_6.name,
     		type: "if",
-    		source: "(39:16) {#if article.emne == \\\"sikkerhet\\\"}",
+    		source: "(39:16) {#if article.emne == \\\"konspirasjon\\\"}",
     		ctx
     	});
 
@@ -2638,7 +2638,7 @@ var app = (function () {
     	return block;
     }
 
-    // (20:12) {#if article.emne == "sikkerhet"}
+    // (20:12) {#if article.emne == "konspirasjon"}
     function create_if_block_1(ctx) {
     	let emne;
     	let current;
@@ -2682,7 +2682,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(20:12) {#if article.emne == \\\"sikkerhet\\\"}",
+    		source: "(20:12) {#if article.emne == \\\"konspirasjon\\\"}",
     		ctx
     	});
 
@@ -3370,23 +3370,23 @@ var app = (function () {
     	let articles = [
     		{
     			"id": 0,
-    			"title": "Biden - Styrk cyberforsvaret i Ukraina.",
+    			"title": "Ekkokammer :- Grobunn for konspirasjonsteorier og bygging av demokratiet",
     			"size": "big",
-    			"emne": "sikkerhet",
-    			"subtext": "Dette er en undertittel til artikkelen, advarers.",
+    			"emne": "konspirasjon",
+    			"subtext": "her skal det skrives en undertittel (catchphrase) til artikkelen.",
     			"alt": "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja",
-    			"image_src": "https://www.kode24.no/images/75665214.jpg?imageId=75665214&x=0&y=0&cropw=100&croph=100&width=940&height=626",
-    			"content": "<b>Biden - Styrk cyberforsvaret i Ukraina.</b><br><br>I løpet av et tiår har sosiale medier forandret måten vi kommuniserer med hverandre på. Vi går i retning av et mer teknologibasert samfunn, og Norge blir ofte omtalt som ett av de mest digitale samfunnene i verden. Ungdom bruker opp mot sju timer i gjennomsnitt på nettet daglig. Ungdom bruker mindre tid sammen med venner ansikt til ansikt, og mer tid på Internett og sosiale medier. Varig lagring: Kommunikasjonen i s"
+    			"image_src": "https://zetland.imgix.net/def2beb0-eec4-11e6-9f6a-e7534d0165bf/boble.gif?fit=crop&crop=entropy&auto=format,compress&cs=srgb&gifq=45&w=1200&h=630",
+    			"content": "EkkokammerEt økende samfunnsproblem er radikalisering på grunn av et stadig mer polarisert folk. En faktor til polariseringen kan være enkel tilgang til falske nyheter i forskjellig grad, fordi mange lesere søker nyheter man fundamentalt er enig i. Dette kan skape grobunner for konspirasjonsteorier da man mister motstående aspekter. Men kan det også være en mulighet for ekte meningsutveksling og bytting av demokratiet?<br><br>Sosiale medier har fått mye av skylda for polariseringen av folket, gjennom oppblomstringen av konspirasjonsteorier på sosiale medier. Og dette er kanskje ikke så rart når vi ser på hvordan et sosialt medium er bygget opp. <a on:click={localStorage.setItem(«article_id», 2); window.location.assign(«/article»);}>(Hvordan Snapchat er bygget fungerer)</a><br><br>Nyheter og meninger som vil komme på sosiale medier som for eksempel Snapchat, er basert på engasjementstatistikk. Mediumet har en rekke algoritmer for å lage en modell av deg, og hva du liker å se av bilder, videoer og meninger. Modellen er basert på sannsynlighet og endrer seg hele tiden mens du scroller deg gjennom mediumet, kanskje helt uviten om at adferden din du overvåkes. Du får kun innlegg som passer predikasjoner av dine meninger, og du mister andre aspekter på saker. Dette er grobunnen i konspirasjonsteorier.<h2>Hvem får skylda?</h2>Kan egentlig den radikaliserte leseren få skylda? Når du systematisert blir tilsendt mer og mer radikale konspirasjonsteorier, etter løpende radikalisering i ekkokammeret kaldt sosiale medier. Man må huske at sosiale mediers formål er ikke å formidle oppriktige nyheter, men å formidle bilder, tanker og hendelser. Men å tjene penger på brukerne, noe som i seg selv er helt redelig siden brukerne godkjenner vilkårene. Brukerne av sosiale medier kan heller ikke få skylda da man må ha en veldig god kritisk tankegang for å motstå konspirasjonsteorier, og skille ekte nyheter fra falske nyheter. Hvem som har skylda er vanskelig å bestemme, og konspirasjonsproblemet forblir uløst.<h2>Kan dette også være en mulighet for ekte meningsutveksling og bygging av demokratiet?</h2>Min personlige mening er at polarisering som en konsekvens av falske nyheter over sosiale medier, ikke vil være til ekte meningsutveksling og bygging av demokratiet. Jeg tror rett og slett du ikke kan ha en ekte meningsutveksling når begge parter baserer meningen sin på en modifisert sannhet tilpasset dem. Det er også viktig å påpeke at de aller fleste holder seg i midten av meningsspekteret, men det er ofte kantene det er opprør mellom. Når det kommer til bygging av demokratiet, er jeg litt mer usikker. Vi ser at meningsmålinger blant ungdommer viser en form for samling rundt partiene Rødt og FRP, som er plassert på hver sin kant i det politiske spekteret. Dette viser polariseringen blant unge, og kan føre til større diskusjoner de neste årene der ytringsfriheten vil spille en sentral rolle. Jeg kan se for meg at engasjement blant unge voksne i tiden fremover vil vokse på grunn av dette, og at demokratiet vil bygges på den måten."
     		},
     		{
     			"id": 1,
     			"title": "Fake News eller Real News :- Hvordan skiller vi dem?",
     			"size": "small",
     			"emne": "nyheter",
-    			"subtext": "Dette er en undertittel til artikkelen, advarers.",
-    			"alt": "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja",
+    			"subtext": "Beskytt deg for falske nyheter og radikalisering over internett.",
+    			"alt": "Forfatter: Casper Nag, Horten Videregående Skole, 31.03.2022",
     			"image_src": "https://international.usc.edu/wp-content/uploads/fake.jpg",
-    			"content": "I dag kan det være vanskelig å skille falske nyheter fra troverdige nyheter. Ifølge sikkerhverdag.no er falske nyheter; «[...] et begrep som ofte brukes om nyhetsliknende saker som virker ekte, men som helt eller delvis er basert på løgn, eller som har utelatt informasjon for å skape en bestemt vridning.»<h2>Bevist feilinformasjon</h2>Bevist falske nyheter er nyheter som blir publisert selv om redaksjonen vet at innholdet er falskt, men likevel gir dem ut. Dette kan være for å manipulere den offentlige meningen eller lede trafikk til en bestemt nettside.<h2>Ubevist feilinformasjon</h2>Ubevist falske nyheter er basert på sanne deler, men noen deler kan være feilaktige. Små feil kan gjøre hele historien generelt feil. Grunnen kan være at journalisten ikke har kontrollert fakta godt nok, eller at han har overdrevet visse aspekter for å få fram et bestemt poeng.<h2>Hvordan fungerer falske nyheter?</h2>Falske nyheter blir stadig mer utbredt, og spres oftest gjennom nettsteder. Bevist falske nyheter lages for å vekke oppmerksomheten og appellere til leserens følelser. Dette blir som regel gjort gjennom sinne eller frykt, og resultatet er at nyhetene blir spredt raskere enn ekte nyheter. Alle store sosiale medier har algoritmer basert på engasjementstatistikk, altså hvor mange som ser, liker, kommenterer og deler innlegg."
+    			"content": "Et økende samfunnsproblem er radikalisering på grunn av et stadig mer polarisert folk. En faktor til polariseringen kan være enkel tilgang til falske nyheter i forskjellig grad, fordi mange lesere søker nyheter man fundamentalt enig i. Dermed kan man miste andre aspekter på saker. Denne artikkelen skriver om falske og ekte nyheter, og skrives i sammenheng med artikkelen om ekkokammer i interwebben.<br><br>I dag kan det være vanskelig å skille falske nyheter fra troverdige nyheter. Ifølge sikkerhverdag.no er falske nyheter; <i>«[...] et begrep som ofte brukes om nyhetsliknende saker som virker ekte, men som helt eller delvis er basert på løgn, eller som har utelatt informasjon for å skape en bestemt vridning.»</i><br><br><strong>Bevist feilinformasjon</strong><br>Bevist falske nyheter er nyheter som blir publisert selv om redaksjonen vet at innholdet er falskt, men likevel gir dem ut. Dette kan være for å manipulere den offentlige meningen eller lede trafikk til en bestemt nettside.<br><br><strong>Ubevist feilinformasjon</h2></strong><br>Ubevist falske nyheter er basert på sanne deler, men noen deler kan være feilaktige. Små feil kan gjøre hele historien generelt feil. Grunnen kan være at journalisten ikke har kontrollert fakta godt nok, eller at han har overdrevet visse aspekter for å få fram et bestemt poeng.<br><h2>Hvordan fungerer falske nyheter?</h2>Falske nyheter blir stadig mer utbredt, og spres oftest gjennom nettsteder. Bevist falske nyheter lages for å vekke oppmerksomheten og appellere til leserens følelser. Dette blir som regel gjort gjennom sinne eller frykt, og resultatet er at nyhetene blir spredt raskere enn ekte nyheter. Alle store sosiale medier har algoritmer basert på engasjementstatistikk, altså hvor mange som ser, liker, kommenterer og deler innlegg<h2>Hva er farlig mer falske nyheter?</h2>Falske nyheters modifiserte eller totalt endrede sannhet, kan føre til radikalisering, opprør og forvirring i samfunnet. Et godt eksempel i dag, er Russland-Ukraina krigen, der det benyttes propaganda fra begge parter for å modifisere sannheten. Vi ser at disse midlene beveger russiske ungdommer til sterkere opposisjon mot Kreml. Men vi ser lang færre eldre demonstrere. Dette tyder på at den russiske propagandaen over mange tiår, er indoktrinert i de eldre. Kombinert med at eldre er mindre mottakelig for endring, ser vi hvordan falske nyheter kan hvitvaske folk. <h2>Hvordan du oppdager falske nyheter?</h2>Det er vist at ungdommer og unge voksne er bedre på å oppdage falske nyheter enn eldre, fordi de er vokst på internett. Kritisk tenkning er nøkkelen til å oppdage falske nyheter. En metode er å blande det du leser, med det du instinktivt tenker om saken. Her er det selvfølgelig en fordel å ikke allerede ha en falsk oppfatning av sannheten. Blir du sint når du leser saken? Da må du kanskje tenke deg om. For mange redaksjoner kan formålet med innlegget være å få deg til å reagere med sinne, for å engasjere deg, dele, kommentere, lese videre, og på den måten tjener nettavisene en hel masse penger. Om du har en mistanke om nyheten, kan det være hensiktsmessig å sjekke om andre nettaviser tar samme standpunkt til saken. Dette er kanskje dem mest effektive måten å oppdage falske nyheter på, da du hele tiden må tenke kritisk for å vurdere de ulike tekstene, og gjøre deg din egen mening."
     		},
     		{
     			"id": 2,
