@@ -27,7 +27,7 @@
                 <Emne text={article.emne} color="--orange"/>
             {/if}
             <h1 id="title">{article.title}</h1>
-            <p id="undertitle">Dette er en undertittel til artikkelen, advarers.</p>
+            <p id="undertitle">{article.subtext}</p>
         </div>
     </div>
 {:else if article.size == "big"}

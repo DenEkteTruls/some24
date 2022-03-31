@@ -13,8 +13,6 @@
             doc.getElementsByTagName("b")[i].style = "\
             color: white; \
             font-size: 30px; \
-            letter-spacing: 1px; \
-            font-weight: 600; \
             ";
         }
         return doc.body.innerHTML;

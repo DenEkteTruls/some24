@@ -1689,28 +1689,28 @@ var app = (function () {
     			div3 = element("div");
     			attr_dev(h1, "id", "title");
     			attr_dev(h1, "class", "svelte-bdlpto");
-    			add_location(h1, file$5, 37, 8, 955);
+    			add_location(h1, file$5, 35, 8, 886);
     			attr_dev(p0, "id", "subtext");
     			attr_dev(p0, "class", "svelte-bdlpto");
-    			add_location(p0, file$5, 38, 8, 1000);
+    			add_location(p0, file$5, 36, 8, 931);
     			if (!src_url_equal(img.src, img_src_value = /*article*/ ctx[0].image_src)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
     			attr_dev(img, "class", "svelte-bdlpto");
-    			add_location(img, file$5, 40, 12, 1080);
+    			add_location(img, file$5, 38, 12, 1011);
     			attr_dev(p1, "id", "subimg");
     			attr_dev(p1, "class", "svelte-bdlpto");
-    			add_location(p1, file$5, 42, 16, 1174);
+    			add_location(p1, file$5, 40, 16, 1105);
     			attr_dev(div0, "class", "subimgdiv svelte-bdlpto");
-    			add_location(div0, file$5, 41, 12, 1133);
+    			add_location(div0, file$5, 39, 12, 1064);
     			attr_dev(div1, "class", "image svelte-bdlpto");
-    			add_location(div1, file$5, 39, 8, 1047);
+    			add_location(div1, file$5, 37, 8, 978);
     			attr_dev(div2, "class", "top svelte-bdlpto");
-    			add_location(div2, file$5, 36, 4, 928);
+    			add_location(div2, file$5, 34, 4, 859);
     			attr_dev(div3, "class", "bottom svelte-bdlpto");
     			attr_dev(div3, "id", "article");
-    			add_location(div3, file$5, 46, 4, 1260);
+    			add_location(div3, file$5, 44, 4, 1191);
     			attr_dev(div4, "class", "container svelte-bdlpto");
-    			add_location(div4, file$5, 35, 0, 899);
+    			add_location(div4, file$5, 33, 0, 830);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1758,8 +1758,6 @@ var app = (function () {
     		doc.getElementsByTagName("b")[i].style = "\
             color: white; \
             font-size: 30px; \
-            letter-spacing: 1px; \
-            font-weight: 600; \
             ";
     	}
 
@@ -2003,21 +2001,21 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*article*/ ctx[0].image_src)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
     			attr_dev(img, "class", "svelte-s4fk3c");
-    			add_location(img, file$3, 35, 8, 1218);
+    			add_location(img, file$3, 35, 8, 1186);
     			attr_dev(h1, "id", "title");
     			attr_dev(h1, "class", "svelte-s4fk3c");
-    			add_location(h1, file$3, 47, 16, 1857);
+    			add_location(h1, file$3, 47, 16, 1825);
     			attr_dev(p, "id", "undertitle");
     			attr_dev(p, "class", "svelte-s4fk3c");
-    			add_location(p, file$3, 48, 16, 1910);
+    			add_location(p, file$3, 48, 16, 1878);
     			attr_dev(div0, "class", "info-container svelte-s4fk3c");
-    			add_location(div0, file$3, 37, 12, 1304);
+    			add_location(div0, file$3, 37, 12, 1272);
     			attr_dev(div1, "class", "subimgdiv svelte-s4fk3c");
-    			add_location(div1, file$3, 36, 8, 1267);
+    			add_location(div1, file$3, 36, 8, 1235);
     			attr_dev(div2, "class", "image-container-big svelte-s4fk3c");
-    			add_location(div2, file$3, 34, 4, 1175);
+    			add_location(div2, file$3, 34, 4, 1143);
     			attr_dev(div3, "class", "container-big svelte-s4fk3c");
-    			add_location(div3, file$3, 33, 0, 1123);
+    			add_location(div3, file$3, 33, 0, 1091);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div3, anchor);
@@ -2135,6 +2133,8 @@ var app = (function () {
     	let t2;
     	let t3;
     	let p;
+    	let t4_value = /*article*/ ctx[0].subtext + "";
+    	let t4;
     	let current;
     	let mounted;
     	let dispose;
@@ -2166,7 +2166,7 @@ var app = (function () {
     			t2 = text(t2_value);
     			t3 = space();
     			p = element("p");
-    			p.textContent = "Dette er en undertittel til artikkelen, advarers.";
+    			t4 = text(t4_value);
     			if (!src_url_equal(img.src, img_src_value = /*article*/ ctx[0].image_src)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
     			attr_dev(img, "class", "svelte-s4fk3c");
@@ -2200,6 +2200,7 @@ var app = (function () {
     			append_dev(h1, t2);
     			append_dev(div1, t3);
     			append_dev(div1, p);
+    			append_dev(p, t4);
     			current = true;
 
     			if (!mounted) {
@@ -2248,6 +2249,7 @@ var app = (function () {
     			}
 
     			if ((!current || dirty & /*article*/ 1) && t2_value !== (t2_value = /*article*/ ctx[0].title + "")) set_data_dev(t2, t2_value);
+    			if ((!current || dirty & /*article*/ 1) && t4_value !== (t4_value = /*article*/ ctx[0].subtext + "")) set_data_dev(t4, t4_value);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -3376,7 +3378,7 @@ var app = (function () {
     			"subtext": "her skal det skrives en undertittel (catchphrase) til artikkelen.",
     			"alt": "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja",
     			"image_src": "https://zetland.imgix.net/def2beb0-eec4-11e6-9f6a-e7534d0165bf/boble.gif?fit=crop&crop=entropy&auto=format,compress&cs=srgb&gifq=45&w=1200&h=630",
-    			"content": "EkkokammerEt økende samfunnsproblem er radikalisering på grunn av et stadig mer polarisert folk. En faktor til polariseringen kan være enkel tilgang til falske nyheter i forskjellig grad, fordi mange lesere søker nyheter man fundamentalt er enig i. Dette kan skape grobunner for konspirasjonsteorier da man mister motstående aspekter. Men kan det også være en mulighet for ekte meningsutveksling og bytting av demokratiet?<br><br>Sosiale medier har fått mye av skylda for polariseringen av folket, gjennom oppblomstringen av konspirasjonsteorier på sosiale medier. Og dette er kanskje ikke så rart når vi ser på hvordan et sosialt medium er bygget opp. <a on:click={localStorage.setItem(«article_id», 2); window.location.assign(«/article»);}>(Hvordan Snapchat er bygget fungerer)</a><br><br>Nyheter og meninger som vil komme på sosiale medier som for eksempel Snapchat, er basert på engasjementstatistikk. Mediumet har en rekke algoritmer for å lage en modell av deg, og hva du liker å se av bilder, videoer og meninger. Modellen er basert på sannsynlighet og endrer seg hele tiden mens du scroller deg gjennom mediumet, kanskje helt uviten om at adferden din du overvåkes. Du får kun innlegg som passer predikasjoner av dine meninger, og du mister andre aspekter på saker. Dette er grobunnen i konspirasjonsteorier.<h2>Hvem får skylda?</h2>Kan egentlig den radikaliserte leseren få skylda? Når du systematisert blir tilsendt mer og mer radikale konspirasjonsteorier, etter løpende radikalisering i ekkokammeret kaldt sosiale medier. Man må huske at sosiale mediers formål er ikke å formidle oppriktige nyheter, men å formidle bilder, tanker og hendelser. Men å tjene penger på brukerne, noe som i seg selv er helt redelig siden brukerne godkjenner vilkårene. Brukerne av sosiale medier kan heller ikke få skylda da man må ha en veldig god kritisk tankegang for å motstå konspirasjonsteorier, og skille ekte nyheter fra falske nyheter. Hvem som har skylda er vanskelig å bestemme, og konspirasjonsproblemet forblir uløst.<h2>Kan dette også være en mulighet for ekte meningsutveksling og bygging av demokratiet?</h2>Min personlige mening er at polarisering som en konsekvens av falske nyheter over sosiale medier, ikke vil være til ekte meningsutveksling og bygging av demokratiet. Jeg tror rett og slett du ikke kan ha en ekte meningsutveksling når begge parter baserer meningen sin på en modifisert sannhet tilpasset dem. Det er også viktig å påpeke at de aller fleste holder seg i midten av meningsspekteret, men det er ofte kantene det er opprør mellom. Når det kommer til bygging av demokratiet, er jeg litt mer usikker. Vi ser at meningsmålinger blant ungdommer viser en form for samling rundt partiene Rødt og FRP, som er plassert på hver sin kant i det politiske spekteret. Dette viser polariseringen blant unge, og kan føre til større diskusjoner de neste årene der ytringsfriheten vil spille en sentral rolle. Jeg kan se for meg at engasjement blant unge voksne i tiden fremover vil vokse på grunn av dette, og at demokratiet vil bygges på den måten."
+    			"content": "Et økende samfunnsproblem er radikalisering på grunn av et stadig mer polarisert folk. En faktor til polariseringen kan være enkel tilgang til falske nyheter i forskjellig grad, fordi mange lesere søker nyheter man fundamentalt er enig i. Dette kan skape grobunner for konspirasjonsteorier da man mister motstående aspekter. Men kan det også være en mulighet for ekte meningsutveksling og bytting av demokratiet?<br><br>Sosiale medier har fått mye av skylda for polariseringen av folket, gjennom oppblomstringen av konspirasjonsteorier på sosiale medier. Og dette er kanskje ikke så rart når vi ser på hvordan et sosialt medium er bygget opp. <a on:click={localStorage.setItem(«article_id», 2); window.location.assign(«/article»);}>(Hvordan Snapchat er bygget fungerer)</a><br><br>Nyheter og meninger som vil komme på sosiale medier som for eksempel Snapchat, er basert på engasjementstatistikk. Mediumet har en rekke algoritmer for å lage en modell av deg, og hva du liker å se av bilder, videoer og meninger. Modellen er basert på sannsynlighet og endrer seg hele tiden mens du scroller deg gjennom mediumet, kanskje helt uviten om at adferden din du overvåkes. Du får kun innlegg som passer predikasjoner av dine meninger, og du mister andre aspekter på saker. Dette er grobunnen i konspirasjonsteorier.<h2>Hvem får skylda?</h2>Kan egentlig den radikaliserte leseren få skylda? Når du systematisert blir tilsendt mer og mer radikale konspirasjonsteorier, etter løpende radikalisering i ekkokammeret kaldt sosiale medier. Man må huske at sosiale mediers formål er ikke å formidle oppriktige nyheter, men å formidle bilder, tanker og hendelser. Men å tjene penger på brukerne, noe som i seg selv er helt redelig siden brukerne godkjenner vilkårene. Brukerne av sosiale medier kan heller ikke få skylda da man må ha en veldig god kritisk tankegang for å motstå konspirasjonsteorier, og skille ekte nyheter fra falske nyheter. Hvem som har skylda er vanskelig å bestemme, og konspirasjonsproblemet forblir uløst.<h2>Kan dette også være en mulighet for ekte meningsutveksling og bygging av demokratiet?</h2>Min personlige mening er at polarisering som en konsekvens av falske nyheter over sosiale medier, ikke vil være til ekte meningsutveksling og bygging av demokratiet. Jeg tror rett og slett du ikke kan ha en ekte meningsutveksling når begge parter baserer meningen sin på en modifisert sannhet tilpasset dem. Det er også viktig å påpeke at de aller fleste holder seg i midten av meningsspekteret, men det er ofte kantene det er opprør mellom. Når det kommer til bygging av demokratiet, er jeg litt mer usikker. Vi ser at meningsmålinger blant ungdommer viser en form for samling rundt partiene Rødt og FRP, som er plassert på hver sin kant i det politiske spekteret. Dette viser polariseringen blant unge, og kan føre til større diskusjoner de neste årene der ytringsfriheten vil spille en sentral rolle. Jeg kan se for meg at engasjement blant unge voksne i tiden fremover vil vokse på grunn av dette, og at demokratiet vil bygges på den måten."
     		},
     		{
     			"id": 1,
@@ -3390,23 +3392,23 @@ var app = (function () {
     		},
     		{
     			"id": 2,
-    			"title": "Snapchat",
+    			"title": "TikTok",
     			"size": "small",
     			"emne": "presentasjon",
-    			"subtext": "Dette er en undertittel til artikkelen, advarers.",
-    			"alt": "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja",
-    			"image_src": "https://www.howtogeek.com/wp-content/uploads/2021/08/snaptchat-logo-welcome-iphone.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1",
-    			"content": "Heisann jeg er også en artikkel med tekst"
+    			"subtext": "Verdens raskest voksende sosiale medium",
+    			"alt": "Forfatter: Casper Nag, Horten Videregående Skole, 31.03.2022",
+    			"image_src": "https://i.guim.co.uk/img/media/442a32d66edcf848cbc79496fea4c8e395bd1569/0_460_7035_4221/master/7035.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=6fca7e2662aa9b90b208a7492f774ce8",
+    			"content": "<h2>Hva er TikTok?</h2>Den tidligere og svært populære applikasjonen «Musical.ly», endret navn til «Tik Tok» etter å ha blitt kjøpt opp i Kina, for så å fortsette å øke populariteten. TikTok slår an blant barn og unge, og er et sosialt medium på lik linje med for eksempel Instagram, Snapchat og Whatsapp. TikTok lar deg mime, synge og danse til kjente poplåter, lage kule 15-sekunders videoer eller ytre dine meninger, for så å dele de med venner eller hele verden. TikTok har en aldersgrense på 13.<br><br>I likhet med andre sosial medium, har TikTok videoer «likes», deles og kommenteres, i tillegg til at man kan «chatte» en til en. Vennebasen kalles følgere eller abonnementer. I følge Ice.no bruker 65% av norske barn og unge mellom 9-18år TikTok aktivt. Grunnen til at en så stor andel barn bruker tjenesten, er TikTok’s endeløse påfyll av morsomme filmer. Denne kreative plattformen sprer mye glede og underholdning for brukeren.<h2>Hvordan fungerer egentlig TikTok</h2>I dag kjenner mange til algoritme-begrepet, og har en smal forståelse av deres funksjoner, men i det minste en viss forståelse. Det er svært viktig å ha denne forståelsen for å forstå at selv om overflaten kan være gøy og morsom, kan det også finnes andre hensikter. Brukerne får tilpassede reklamer og innlegg, noe som både kan føre til radikalisering, og økt sannsynlighet for å sjekke ut produkter fra reklamene. Innleggene kan være videoer av hvilke som helst slag, og da vil naturligvis noen velge å bruke dette som en formidlingsplattform. Når vi ser at mange barn blir satt i dette ekkokammeret med falske nyheter og konspirasjonsteorier, blir teorien om at brukerne er det faktiske produktet, mer tydelig. TikTok som har en brukerbase på over 1 milliarder fordelt i over 150 land, benytter muligheten til å tjene gode penger på brukerne. TikTok tjener hovedsakelig penger gjennom reklame ovenfor brukeren, og at brukere kan kjøpe spesialeffekter for kontoene sine.<h2>TikTok's fremtid</h2>Den nåværende populariteten til appen er forbløffende, men det er ikke gitt at tjenesten vil nå samme nivå som konkurrentene; Instagram og YouTube. Et svært lignende konsept, Vine, var en ekstremt populær videodelingsplattform noen år tilbake, men appen er helt ute av bildet nå. Og det er også eksempler på mange andre apper, som forsvinner etter en rask berømmelse. For å opprettholde sin popularitet må TikTok fortsette med sin innovasjon for å finne nye måter å engasjere brukerbasen på. De vil også måtte gjøre plattformen mer markedsføringsvennlig for at merkevarer vil fortsette å betale for reklame. Hvis TikTok er i stand til å utnytte markedsverdien sin, vil den trolig fortsette å vokse. Men hvis TikTok ikke er i stand til å holde på brukerbasen ved å tape for et konkurrerende medium, vil nok TikToks fremtid være mørk."
     		},
     		{
     			"id": 3,
-    			"title": "Viste du :- Du eier egentlig ikke bildene dine på nett!",
+    			"title": "Viste du? :- Snart kan du leve i sosiale medier.",
     			"size": "small",
     			"emne": "Viste du?",
-    			"image_src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT408l0LpFepyCzl1XdKeahlWsIISoC8092ew&usqp=CAU",
-    			"subtext": "Dette er en undertittel til artikkelen, advarers.",
-    			"alt": "Litt informasjon om bilde som vi ser ovenfor denne tekten i dag har jeg penger i lomma ja",
-    			"content": "Du er dum ass..."
+    			"image_src": "https://cdn.dribbble.com/users/1646023/screenshots/6625629/gamer_800x600.gif",
+    			"subtext": "Hvordan har sosiale medier endret seg de siste 20 årene, og hvordan ser fremtiden ut?",
+    			"alt": "Forfatter: Casper Nag, Horten Videregående Skole, 31.03.2022",
+    			"content": "Sosiale mediers evolusjonPå mindre enn en generasjon har sosiale medier utviklet seg fra å være til direkte elektronisk informasjonsutveksling, til å bli et virtuelt samlingssted. Og dette samlingsstedet er også et av de viktigste markedsføringsverktøyene i det 21. århundre. <br><br>Om man regner et sosialt medium som en plattform som vanlige individer kan benytte for kommunikasjon, er begynnelsen på 80-90-tallet. På denne tiden begynte datamaskiner etter hvert å bli allemannseie, og epost og nettprat i sanntid ble en realitet.<h2>Evolusjonen</h2>Et av de tidligste sosiale mediumene med større nettverk, var profilopplastingstjenesten Six Degrees i 1997. Plattformen var kortvarig og ble raskt erstattet av Friendster i 2001. Plattformene tiltrakk seg millioner av brukere og muliggjorde registrering av e-postadresser og grunnleggende nettverk. I 1999 ble LiveJournal lansert. Det var en bloggplattform, og dette er en tidlig form for sosial kommunikasjon. Også denne tjenesten går raskt i ruiner og blir erstattet av Pyra Labs, eid av Google. Da MySpace ble lansert i 2003 ble sosiale medier for fullt brukernes hovedfokus på internett. I 2006 var MySpace verdens mest besøkte nettsted, blant annet fordi plattformen hadde innovative funksjoner, som for eksempel å kunne dele musikk direkte på venners profilsider.<br><br>Dagens sosiale medienettverk er befolket av mer enn 5 milliarder brukere (70% av verdens befolkning) gjennom en rekke tjenester. (Maryville.edu). Frigjøringen fra den stasjonære datamaskinen til smarttelefonen og mobilappmiljøet, gjorde de store sosiale mediumene stadig mer tiltrekkende. Etter hvert som kameraene ble bedre og man kunne motta meldinger i sanntid, ble det store og tunge stasjonære byttet ut med en lett og liten datamaskin med plass i bukselomma. <br><br>Etter hvert som brukerbasene økte til hundrevis av millioner, begynte forretningsapplikasjonene til de store sosiale plattformene å ta form. Sosiale medieselskaper hadde og har tilgang til noen av de rikeste sporbare brukerdataene som noen gang er unnfanget. Og er dette forretningsmodellene i senere tid bygges rundt.<h2>Sosiale Mediers fremtid</h2>Facebook, Google og andre selskap utvikler i dag grunnlaget for noe de tror kan være internetts og sosiale mediers neste sted, Metaverset. Det vil ifølge selskapenes visjon være et tilnærmet lovløst og uregulert virtuelt samfunn, der man i praksis kan kunne leve i en virtuell og digital virkelighet. Her er det naturligvis mange etiske utfordringer som først må løses, der skadeliggjøring av mennesker over internett er den tyngste faktoren."
     		}
     	];
 
